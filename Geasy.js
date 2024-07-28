@@ -4,7 +4,7 @@ const questions = [
     answers: [
       {text: "Bad blood", correct: false},
        {text: "Blank Space", correct: true},
-       {text: "Red", correct: false},
+       {text: "State Of Grace", correct: false},
        {text: "22", correct: false},
     ]
   },
