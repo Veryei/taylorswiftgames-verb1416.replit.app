@@ -11,7 +11,7 @@ const questions = [
   {
     question: "'These are the words I held back'?",
       answers: [
-        {text: "Fearless", correct: false},
+        {text: "Love Story", correct: false},
          {text: "All too well (10 minute version)", correct: false},
          {text: "Style", correct: false},
          {text: "Enchanted", correct: true},
