@@ -68,6 +68,10 @@ function startQuiz(){
   nextButton.innerHTML = "Next";
   showQuestion();
 }
+function getRandomSubset(questions, numberOfQuestions) {
+    const shuffled = questions.sort(() => 0.5 - Math.random()); // Shuffle the array
+    return shuffled.slice(5, numberOfQuestions); // Select the first N questions
+}
 
 function showQuestion(){
   resetState();
@@ -118,11 +122,6 @@ nextButton.addEventListener("click", () =>{
     startQuiz();
   }
 });
-
-function getRandomSubset(questions, numberOfQuestions) {
-    const shuffled = questions.sort(() => 0.5 - Math.random()); // Shuffle the array
-    return shuffled.slice(0, numberOfQuestions); // Select the first N questions
-}
 
 function selectAnswer(e){
   const selectedBtn = e.target;
