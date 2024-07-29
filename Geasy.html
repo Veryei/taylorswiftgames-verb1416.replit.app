@@ -22,6 +22,46 @@
           <button class="btn"> answer 3 </button>
           <button class="btn"> answer 4 </button>
     </div>
+        function getRandomSubset(questions, numberOfQuestions) {
+            const shuffled = questions.sort(() => 0.5 - Math.random());
+            return shuffled.slice(0, numberOfQuestions);
+        }
+
+        function displayQuestions(questions) {
+            const questionContainer = document.getElementById('question-container');
+            questionContainer.innerHTML = '';
+
+            questions.forEach((questionObj, index) => {
+                const questionDiv = document.createElement('div');
+                questionDiv.classList.add('question');
+
+                const questionText = document.createElement('h2');
+                questionText.textContent = `${index + 1}. ${questionObj.question}`;
+                questionDiv.appendChild(questionText);
+
+                questionObj.options.forEach(option => {
+                    const button = document.createElement('button');
+                    button.textContent = option;
+                    button.onclick = () => checkAnswer(option, questionObj.answer);
+                    questionDiv.appendChild(button);
+                });
+
+                questionContainer.appendChild(questionDiv);
+            });
+        }
+
+        function checkAnswer(selectedOption, correctAnswer) {
+            if (selectedOption === correctAnswer) {
+                alert('Correct!');
+            } else {
+                alert('Incorrect, try again.');
+            }
+        }
+
+        function initQuiz() {
+            const selectedQuestions = getRandomSubset(allQuestions, 3); // Change 3 to however many questions you want
+            displayQuestions(selectedQuestions);
+        }
         <button id="next-btn"> Next </button>
       </div>
     </div>
