@@ -54,10 +54,6 @@ const questions = [
       ]
   },
 ];
-function getRandomSubset(questions, numberOfQuestions) {
-    const shuffled = questions.sort(() => 0.5 - Math.random()); // Shuffle the array
-    return shuffled.slice(5, numberOfQuestions); // Select the first N questions
-}
 
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
@@ -98,31 +94,6 @@ function resetState(){
   }
 }
 
-function showScore(){
-  resetState();
-  questionElement.innerHTML = `You scored ${score} out of ${questions.length}`;
-  nextButton.innerHTML = "Play Again!";
-  nextButton.style.display = "block";
-}
-
-
-function handleNextButton(){
-  currentQuestionIndex++;
-  if(currentQuestionIndex < questions.length){
-    showQuestion();
-  }else{
-    showScore();
-  }
-}
-
-nextButton.addEventListener("click", () =>{
-  if(currentQuestionIndex < questions.length){
-    handleNextButton();
-  }else{
-    startQuiz();
-  }
-});
-
 function selectAnswer(e){
   const selectedBtn = e.target;
   const isCorrect = selectedBtn.dataset.correct === "true";
@@ -141,5 +112,31 @@ function selectAnswer(e){
   nextButton.style.display = "block";
 }
 
+function showScore(){
+  resetState();
+  questionElement.innerHTML = `You scored ${score} out of ${questions.length}`;
+  nextButton.innerHTML = "Play Again!";
+  nextButton.style.display = "block";
+}
+
+
+function handleNextButton(){
+  currentQuestionIndex++;
+  if(currentQuestionIndex < questions.length){
+    showQuestion();
+  }else{
+    showScore();
+  }
+}
+
+
+
+nextButton.addEventListener("click", () =>{
+  if(currentQuestionIndex < questions.length){
+    handleNextButton();
+  }else{
+    startQuiz();
+  }
+});
 
 startQuiz();
