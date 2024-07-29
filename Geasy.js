@@ -1,56 +1,56 @@
 const questions = [
   {
-    question: "'I can make the bad guys good for a weekend'",
+    question: "'You don't know about me, but i'll bet you want to'",
     answers: [
       {text: "Bad blood", correct: false},
-       {text: "Blank Space", correct: true},
+       {text: "Blank Space", correct: false},
        {text: "State Of Grace", correct: false},
-       {text: "22", correct: false},
+       {text: "22", correct: true},
     ]
   },
   {
-    question: "'These are the words I held back'?",
+    question: "'The lights are off, he's taking off his coat'?",
       answers: [
         {text: "Love Story", correct: false},
          {text: "All too well (10 minute version)", correct: false},
-         {text: "Style", correct: false},
-         {text: "Enchanted", correct: true},
+         {text: "Style", correct: true},
+         {text: "Enchanted", correct: false},
       ]
   },
   {
-  question: "'I'm really gonna miss you picking fights'",
+  question: "'Can't stop, won't stop groovin''",
     answers: [
-      {text: "We Are Never Ever Getting Back Together", correct: true},
+      {text: "Shake It Off", correct: true},
        {text: "Cardigan", correct: false},
-       {text: "Anti-hero", correct: false},
-       {text: "Fearless", correct: false},
+       {text: "Wildest Dreams", correct: false},
+       {text: "Hey Stephen", correct: false},
     ]
   },
   {
-    question: "'Pierced through the heart but never killed'",
+    question: "'No rules in breakable heaven'",
       answers: [
-        {text: "Shake it off", correct: false},
-         {text: "Speak now", correct: false},
-         {text: "Anti-hero", correct: true},
-         {text: "this is me trying", correct: false},
+        {text: "Lover", correct: false},
+         {text: "London boy", correct: false},
+         {text: "Anti-hero", correct: false},
+         {text: "Cruel Summer", correct: true},
       ]
   },
   {
-    question: "'My hands shake, I'm not usually this way'",
+    question: "'This is our place, we make the call'",
       answers: [
-        {text: "Long Live", correct: false},
-         {text: "Fearless", correct: true},
+        {text: "Lover", correct: true},
+         {text: "Delicate", correct: false},
          {text: "betty", correct: false},
-         {text: "Cardigan", correct: false},
+         {text: "London boy", correct: false},
       ]
   },
   {
-    question: "'But I knew you'd linger like a tattoo kiss'",
+    question: "'And I got a boyfriend, he's older than us'",
       answers: [
-        {text: "Cardigan", correct: true},
-         {text: "Snow On The Beach", correct: false},
-         {text: "You're On Your Own Kid", correct: false},
-         {text: "evermore", correct: false},
+        {text: "Delicate", correct: false},
+         {text: "Gorgeous", correct: true},
+         {text: "End Game", correct: false},
+         {text: "Karma", correct: false},
       ]
   },
 ];
