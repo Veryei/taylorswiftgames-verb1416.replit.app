@@ -54,6 +54,10 @@ const questions = [
       ]
   },
 ];
+function getRandomSubset(questions, numberOfQuestions) {
+    const shuffled = questions.sort(() => 0.5 - Math.random()); // Shuffle the array
+    return shuffled.slice(5, numberOfQuestions); // Select the first N questions
+}
 
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
@@ -67,10 +71,6 @@ function startQuiz(){
   score = 0;
   nextButton.innerHTML = "Next";
   showQuestion();
-}
-function getRandomSubset(questions, numberOfQuestions) {
-    const shuffled = questions.sort(() => 0.5 - Math.random()); // Shuffle the array
-    return shuffled.slice(5, numberOfQuestions); // Select the first N questions
 }
 
 function showQuestion(){
