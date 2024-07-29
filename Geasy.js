@@ -119,26 +119,11 @@ nextButton.addEventListener("click", () =>{
   }
 });
 
-function getRandomQuestion(questions) {
-    const randomIndex = Math.floor(Math.random() * questions.length);
-    return questions[randomIndex];
+function getRandomSubset(questions, numberOfQuestions) {
+    const shuffled = questions.sort(() => 0.5 - Math.random()); // Shuffle the array
+    return shuffled.slice(0, numberOfQuestions); // Select the first N questions
 }
 
-function displayQuestion() {
-    const question = getRandomQuestion(questions);
-
-    document.getElementById('question').textContent = question.question;
-
-    const optionsContainer = document.getElementById('answers');
-    optionsContainer.innerHTML = '';
-
-    question.answers.forEach(option => {
-        const button = document.createElement('button');
-        button.textContent = option;
-        button.onclick = () => selectAnswer(option, question.answer);
-        optionsContainer.appendChild(button);
-    });
-}
 function selectAnswer(e){
   const selectedBtn = e.target;
   const isCorrect = selectedBtn.dataset.correct === "true";
