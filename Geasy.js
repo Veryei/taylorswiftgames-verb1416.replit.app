@@ -55,6 +55,27 @@ const questions = [
   },
 ];
 
+function getRandomQuestion(questions) {
+    const randomIndex = Math.floor(Math.random() * questions.length);
+    return questions[randomIndex];
+}
+
+function displayQuestion() {
+    const question = getRandomQuestion(questions);
+
+    document.getElementById('question').textContent = question.question;
+
+    const optionsContainer = document.getElementById('options');
+    optionsContainer.innerHTML = '';
+
+    question.options.forEach(option => {
+        const button = document.createElement('button');
+        button.textContent = option;
+        button.onclick = () => checkAnswer(option, question.answer);
+        optionsContainer.appendChild(button);
+    });
+}
+
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
