@@ -1,31 +1,68 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="Geasy.css" rel="stylesheet" type="text/css" />
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1358301053315740"
-     crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Quiz</title>
+    <style>
+        .question { margin-bottom: 20px; }
+        button { display: block; margin: 5px 0; }
+    </style>
 </head>
+<body onload="initQuiz()">
+    <div id="question-container"></div>
+    <script>
+        const allQuestions = [
+            { question: "What is the capital of France?", options: ["Paris", "London", "Berlin", "Madrid"], answer: "Paris" },
+            { question: "What is 2 + 2?", options: ["3", "4", "5", "6"], answer: "4" },
+            { question: "What is the color of the sky?", options: ["Blue", "Green", "Red", "Yellow"], answer: "Blue" },
+            { question: "What is the largest ocean?", options: ["Atlantic", "Indian", "Arctic", "Pacific"], answer: "Pacific" },
+            { question: "What is the smallest prime number?", options: ["0", "1", "2", "3"], answer: "2" }
+            // Add more questions as needed
+        ];
 
-  <body>
-    <div class="app"> 
-      <h1> EASY SONG LYRICS </h1>
-      <div class="quiz">
-       <h2 id="question"> question 1 </h2>
-        <div id="answer-buttons">
-          <button class="btn"> answer 1 </button>
-          <button class="btn"> answer 2 </button>
-          <button class="btn"> answer 3 </button>
-          <button class="btn"> answer 4 </button>
-    </div>
-        <button id="next-btn"> Next </button>
-      </div>
-    </div>
-    </body>
+        function getRandomSubset(questions, numberOfQuestions) {
+            const shuffled = questions.sort(() => 0.5 - Math.random());
+            return shuffled.slice(0, numberOfQuestions);
+        }
+
+        function displayQuestions(questions) {
+            const questionContainer = document.getElementById('question-container');
+            questionContainer.innerHTML = '';
+
+            questions.forEach((questionObj, index) => {
+                const questionDiv = document.createElement('div');
+                questionDiv.classList.add('question');
+
+                const questionText = document.createElement('h2');
+                questionText.textContent = `${index + 1}. ${questionObj.question}`;
+                questionDiv.appendChild(questionText);
+
+                questionObj.options.forEach(option => {
+                    const button = document.createElement('button');
+                    button.textContent = option;
+                    button.onclick = () => checkAnswer(option, questionObj.answer);
+                    questionDiv.appendChild(button);
+                });
+
+                questionContainer.appendChild(questionDiv);
+            });
+        }
+
+        function checkAnswer(selectedOption, correctAnswer) {
+            if (selectedOption === correctAnswer) {
+                alert('Correct!');
+            } else {
+                alert('Incorrect, try again.');
+            }
+        }
+
+        function initQuiz() {
+            const selectedQuestions = getRandomSubset(allQuestions, 3); // Change 3 to however many questions you want
+            displayQuestions(selectedQuestions);
+        }
+    </script>
+
 <h3> Fun fact #10 </h3>
   
   <p> The very first song Taylor Swift ever wrote was called "Lucky You." She wrote it when she was 12 years old after a computer repairman who came to her house taught her how to play three chords on a guitar.</p>
