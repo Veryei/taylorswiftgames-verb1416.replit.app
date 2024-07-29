@@ -1,41 +1,60 @@
 const questions = [
-    {
-        question: "What is the capital of France?",
-        options: ["Paris", "London", "Berlin", "Madrid"],
-        answer: "Paris"
-    },
-    {
-        question: "What is 2 + 2?",
-        options: ["3", "4", "5", "6"],
-        answer: "4"
-    },
-    {
-        question: "What is the color of the sky?",
-        options: ["Blue", "Green", "Red", "Yellow"],
-        answer: "Blue"
-    }
-    // Add more questions as needed
+  {
+    question: "'You don't know about me, but i'll bet you want to'",
+    answers: [
+      {text: "Bad blood", correct: false},
+       {text: "Blank Space", correct: false},
+       {text: "State Of Grace", correct: false},
+       {text: "22", correct: true},
+    ]
+  },
+  {
+    question: "'The lights are off, he's taking off his coat'?",
+      answers: [
+        {text: "Love Story", correct: false},
+         {text: "All too well (10 minute version)", correct: false},
+         {text: "Style", correct: true},
+         {text: "Enchanted", correct: false},
+      ]
+  },
+  {
+  question: "'Can't stop, won't stop groovin''",
+    answers: [
+      {text: "Shake It Off", correct: true},
+       {text: "Cardigan", correct: false},
+       {text: "Wildest Dreams", correct: false},
+       {text: "Hey Stephen", correct: false},
+    ]
+  },
+  {
+    question: "'No rules in breakable heaven'",
+      answers: [
+        {text: "Lover", correct: false},
+         {text: "London boy", correct: false},
+         {text: "Anti-hero", correct: false},
+         {text: "Cruel Summer", correct: true},
+      ]
+  },
+  {
+    question: "'This is our place, we make the call'",
+      answers: [
+        {text: "Lover", correct: true},
+         {text: "Delicate", correct: false},
+         {text: "betty", correct: false},
+         {text: "London boy", correct: false},
+      ]
+  },
+  {
+    question: "'And I got a boyfriend, he's older than us'",
+      answers: [
+        {text: "Delicate", correct: false},
+         {text: "Gorgeous", correct: true},
+         {text: "End Game", correct: false},
+         {text: "Karma", correct: false},
+      ]
+  },
 ];
 
-function getRandomQuestion(questions) {
-    const randomIndex = Math.floor(Math.random() * questions.length);
-    return questions[randomIndex];
-}
-
-function displayQuestion() {
-    const question = getRandomQuestion(questions);
-
-    document.getElementById('question').textContent = question.question;
-
-    const optionsContainer = document.getElementById('options');
-    optionsContainer.innerHTML = '';
-
-    question.options.forEach(option => {
-        const button = document.createElement('button');
-        button.textContent = option;
-        button.onclick = () => checkAnswer(option, question.answer);
-        optionsContainer.appendChild(button);
-    });
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
@@ -75,6 +94,51 @@ function resetState(){
   }
 }
 
+function showScore(){
+  resetState();
+  questionElement.innerHTML = `You scored ${score} out of ${questions.length}`;
+  nextButton.innerHTML = "Play Again!";
+  nextButton.style.display = "block";
+}
+
+
+function handleNextButton(){
+  currentQuestionIndex++;
+  if(currentQuestionIndex < questions.length){
+    showQuestion();
+  }else{
+    showScore();
+  }
+}
+
+nextButton.addEventListener("click", () =>{
+  if(currentQuestionIndex < questions.length){
+    handleNextButton();
+  }else{
+    startQuiz();
+  }
+});
+
+function getRandomQuestion(questions) {
+    const randomIndex = Math.floor(Math.random() * questions.length);
+    return questions[randomIndex];
+}
+
+function displayQuestion() {
+    const question = getRandomQuestion(questions);
+
+    document.getElementById('question').textContent = question.question;
+
+    const optionsContainer = document.getElementById('answers');
+    optionsContainer.innerHTML = '';
+
+    question.answers.forEach(option => {
+        const button = document.createElement('button');
+        button.textContent = option;
+        button.onclick = () => selectAnswer(option, question.answer);
+        optionsContainer.appendChild(button);
+    });
+}
 function selectAnswer(e){
   const selectedBtn = e.target;
   const isCorrect = selectedBtn.dataset.correct === "true";
@@ -93,32 +157,5 @@ function selectAnswer(e){
   nextButton.style.display = "block";
 }
 
-function showScore(){
-  resetState();
-  questionElement.innerHTML = `You scored ${score} out of ${questions.length}`;
-  nextButton.innerHTML = "Play Again!";
-  nextButton.style.display = "block";
-}
-
-
-function handleNextButton(){
-  currentQuestionIndex++;
-  if(currentQuestionIndex < questions.length){
-    showQuestion();
-  }else{
-    showScore();
-  }
-}
-
-
-
-nextButton.addEventListener("click", () =>{
-  if(currentQuestionIndex < questions.length){
-    handleNextButton();
-  }else{
-    startQuiz();
-  }
-});
 
 startQuiz();
-
