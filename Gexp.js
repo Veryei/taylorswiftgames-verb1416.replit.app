@@ -1,55 +1,55 @@
 const questions = [
   {
-    question: "'Then feverishly calling their cousins'",
+    question: "'I find myself at your door'",
     answers: [
-      {text: "The prophecy", correct: false},
+      {text: "The Last Time", correct: true},
        {text: "Labyrinth", correct: false},
-       {text: "How did it end?", correct: true},
+       {text: "How did it end?", correct: false},
        {text: "Peter", correct: false},
     ]
   },
   {
-    question: "'Free as these birds, light as whispers'",
+    question: "'Maybe I was naive, got lost in your eyes'",
       answers: [
         {text: "I Hate It Here", correct: false},
-         {text: "Carolina", correct: true},
-         {text: "epiphany", correct: false},
+         {text: "Carolina", correct: false},
+         {text: "White Horse", correct: true},
          {text: "mirrorball", correct: false},
       ]
   },
   {
-  question: "'Open the blinds, let me see your face'",
+  question: "'I hope she'll be your beautiful fool'",
     answers: [
       {text: "Untouchable", correct: false},
        {text: "the lakes", correct: false},
-       {text: "You Are In Love", correct: false},
-       {text: "Renegade", correct: true},
+       {text: "happiness", correct: true},
+       {text: "Renegade", correct: false},
     ]
   },
   {
-    question: "'And now that you're close, I feel like coming undone'",
+    question: "'Something gave you the nerve to touch my hand'",
       answers: [
-        {text: "Untouchable", correct: true},
+        {text: "I Forgot That You Existed", correct: false},
          {text: "Tell Me Why", correct: false},
          {text: "loml", correct: false},
-         {text: "seven", correct: false},
+         {text: "It's Nice To Have A Friend", correct: true},
       ]
   },
   {
-    question: "'And I wish I could run to you'",
+    question: "'She knew what the agony had been for'",
       answers: [
-        {text: "The Last time", correct: false},
-         {text: "I Almost Do", correct: true},
-         {text: "Innocent", correct: false},
+        {text: "Robin", correct: false},
+         {text: "I Almost Do", correct: false},
+         {text: "The Manuscript", correct: true},
          {text: "Timeless", correct: false},
       ]
   },
   {
-    question: "'Beauty is a beast that roars'",
+    question: "'Sit quiet by my side in the shade'",
       answers: [
-        {text: "Clara Bow", correct: true},
+        {text: "Clara Bow", correct: false},
          {text: "The Alchemy", correct: false},
-         {text: "my tears ricochet", correct: false},
+         {text: "Paris", correct: true},
          {text: "peace", correct: false},
       ]
   },
