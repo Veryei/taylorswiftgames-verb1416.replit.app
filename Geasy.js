@@ -148,8 +148,9 @@ function updateTimer() {
         clearInterval(timerInterval);
         timerElement.innerHTML = 'Time’s up!';
         button.disabled = true;
-        nextButton.style.display = "block";
-        nextButton.addEventListener("click");
+      nextButton.style.display = "block";
+      nextButton.addEventListener("click");
+      return
         
     }
 
@@ -164,5 +165,4 @@ function updateTimer() {
     timeLeft--;
 }
 
-window.onload = startTimer;
 startQuiz();
