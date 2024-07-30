@@ -148,7 +148,6 @@ function updateTimer() {
         clearInterval(timerInterval);
         timerElement.innerHTML = 'Time’s up!';
         nextButton.style.display = "block";
-        classList.add("incorrect");
         button.disabled = true;
     }
 
