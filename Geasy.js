@@ -128,9 +128,6 @@ function handleNextButton(){
     showScore();
   }
 }
-
-
-
 nextButton.addEventListener("click", () =>{
   if(currentQuestionIndex < questions.length){
     handleNextButton();
@@ -138,5 +135,37 @@ nextButton.addEventListener("click", () =>{
     startQuiz();
   }
 });
+let timeLeft = 40; 
+let timerElement = document.getElementById('timer');
+let timerInterval;
 
+function startTimer() {
+    timerInterval = setInterval(updateTimer, 1000); // Update every second
+}
+
+function updateTimer() {
+    if (timeLeft <= 0) {
+        clearInterval(timerInterval);
+        timerElement.innerHTML = 'Time’s up!';
+        submitQuiz(); // Automatically submit quiz when time is up
+        return;
+    }
+
+    let minutes = Math.floor(timeLeft / 60);
+    let seconds = timeLeft % 60;
+    
+    // Format minutes and seconds
+    minutes = minutes < 10 ? '0' + minutes : minutes;
+    seconds = seconds < 10 ? '0' + seconds : seconds;
+
+    timerElement.innerHTML = `Time Left: ${minutes}:${seconds}`;
+    timeLeft--;
+}
+
+function submitQuiz() {
+    // Add logic to handle quiz submission
+    alert('Quiz submitted!');
+    document.getElementById('quiz-form').submit();
+}
+window.onload = startTimer;
 startQuiz();
