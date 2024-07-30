@@ -150,9 +150,7 @@ function updateTimer() {
         add("incorrect");
         button.disabled = true;
         nextButton.style.display = "block";
-          return;
     }
-}
 
     let minutes = Math.floor(timeLeft / 60);
     let seconds = timeLeft % 60;
