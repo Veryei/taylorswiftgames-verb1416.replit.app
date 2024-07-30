@@ -135,7 +135,7 @@ nextButton.addEventListener("click", () =>{
     startQuiz();
   }
 });
-let timeLeft = 40; 
+let timeLeft =15; 
 let timerElement = document.getElementById('timer');
 let timerInterval;
 
@@ -147,7 +147,7 @@ function updateTimer() {
     if (timeLeft <= 0) {
         clearInterval(timerInterval);
         timerElement.innerHTML = 'Time’s up!';
-        nextButton.addEventListener("Click"); // Automatically submit quiz when time is up
+         nextButton.style.display = "block"; // Automatically submit quiz when time is up
         return;
     }
 
