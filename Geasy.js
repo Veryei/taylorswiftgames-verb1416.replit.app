@@ -147,7 +147,10 @@ function updateTimer() {
     if (timeLeft <= 0) {
         clearInterval(timerInterval);
         timerElement.innerHTML = 'Time’s up!';
-        button.disabled = true; // Automatically submit quiz when time is up
+    button.disabled = true;
+  };
+  nextButton.style.display = "block";
+}
         return;
     }
 
