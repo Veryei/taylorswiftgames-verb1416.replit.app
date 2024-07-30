@@ -147,9 +147,8 @@ function updateTimer() {
     if (timeLeft <= 0) {
         clearInterval(timerInterval);
         timerElement.innerHTML = 'Time’s up!';
-        button.disabled = true;
-      nextButton.style.display = "block";
-      nextButton.innerHTML = "Next";
+        nextButton.style.display = "block";
+        nextButton.innerHTML = "Next";
     }
 
     let minutes = Math.floor(timeLeft / 60);
