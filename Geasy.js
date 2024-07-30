@@ -162,10 +162,5 @@ function updateTimer() {
     timeLeft--;
 }
 
-function submitQuiz() {
-    // Add logic to handle quiz submission
-    alert('Quiz submitted!');
-    document.getElementById('quiz-form').submit();
-}
 window.onload = startTimer;
 startQuiz();
