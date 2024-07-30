@@ -148,9 +148,7 @@ function updateTimer() {
         clearInterval(timerInterval);
         timerElement.innerHTML = 'Time’s up!';
     button.disabled = true;
-  };
   nextButton.style.display = "block";
-}
         return;
     }
 
