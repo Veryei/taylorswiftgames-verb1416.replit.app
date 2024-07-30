@@ -135,7 +135,7 @@ nextButton.addEventListener("click", () =>{
     startQuiz();
   }
 });
-let timeLeft = 15; 
+let timeLeft = 40; 
 let timerElement = document.getElementById('timer');
 let timerInterval;
 
@@ -147,7 +147,7 @@ function updateTimer() {
     if (timeLeft <= 0) {
         clearInterval(timerInterval);
         timerElement.innerHTML = 'Time’s up!';
-        showQuestion(); // Automatically submit quiz when time is up
+        nextButton.addEventListener("Click"); // Automatically submit quiz when time is up
         return;
     }
 
@@ -164,7 +164,7 @@ function updateTimer() {
 
 function submitQuiz() {
     // Add logic to handle quiz submission
-    alert('Time's Up!');
+    alert('Quiz submitted!');
     document.getElementById('quiz-form').submit();
 }
 window.onload = startTimer;
