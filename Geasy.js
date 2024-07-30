@@ -147,7 +147,7 @@ function updateTimer() {
     if (timeLeft <= 0) {
         clearInterval(timerInterval);
         timerElement.innerHTML = 'Time’s up!';
-        nextButton(click); // Automatically submit quiz when time is up
+        showQuestion(); // Automatically submit quiz when time is up
         return;
     }
 
