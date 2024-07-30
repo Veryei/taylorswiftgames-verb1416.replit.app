@@ -147,11 +147,12 @@ function updateTimer() {
     if (timeLeft <= 0) {
         clearInterval(timerInterval);
         timerElement.innerHTML = 'Time’s up!';
-        add("incorrect")
-        button.disabled = true;
-        nextButton.style.display = "block";
+      add("incorrect");
+      button.disabled = true;
+      nextButton.style.display = "block";
         return;
     }
+}
 
     let minutes = Math.floor(timeLeft / 60);
     let seconds = timeLeft % 60;
