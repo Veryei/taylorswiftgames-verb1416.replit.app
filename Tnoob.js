@@ -1,56 +1,70 @@
 const questions = [
   {
-    question: "'I find myself at your door'",
+    question: "Does Taylor have dogs?",
     answers: [
-      {text: "The Last Time", correct: true},
-       {text: "Labyrinth", correct: false},
-       {text: "How did it end?", correct: false},
-       {text: "Peter", correct: false},
+      {text: "Yes", correct: false},
+       {text: "No", correct: true},
     ]
   },
   {
-    question: "'Maybe I was naive, got lost in your eyes'",
+    question: "What's the name of her 4th album?",
       answers: [
-        {text: "I Hate It Here", correct: false},
-         {text: "Carolina", correct: false},
-         {text: "White Horse", correct: true},
-         {text: "mirrorball", correct: false},
+        {text: "Speak now", correct: false},
+         {text: "reputation", correct: false},
+         {text: "1989", correct: false},
+         {text: "Red", correct: true},
       ]
   },
   {
-  question: "'I hope she'll be your beautiful fool'",
+  question: "What's the name of her father?",
     answers: [
-      {text: "Untouchable", correct: false},
-       {text: "the lakes", correct: false},
-       {text: "happiness", correct: true},
-       {text: "Renegade", correct: false},
+      {text: "Austin", correct: false},
+       {text: "Andrew", correct: false},
+       {text: "Scott", correct: true},
+       {text: "Franklin", correct: false},
     ]
   },
   {
-    question: "'Something gave you the nerve to touch my hand'",
+    question: "How old is she as of August 2024",
       answers: [
-        {text: "I Forgot That You Existed", correct: false},
-         {text: "Tell Me Why", correct: false},
-         {text: "loml", correct: false},
-         {text: "It's Nice To Have A Friend", correct: true},
+        {text: "33", correct: false},
+         {text: "34", correct: true},
+         {text: "35", correct: false},
+         {text: "32", correct: false},
       ]
   },
   {
-    question: "'She knew what the agony had been for'",
+    question: "Does she have a song named "evermore"?",
       answers: [
-        {text: "Robin", correct: false},
-         {text: "I Almost Do", correct: false},
-         {text: "The Manuscript", correct: true},
-         {text: "Timeless", correct: false},
+        {text: "Yes", correct: true},
+         {text: "No", correct: false},
       ]
   },
   {
-    question: "'Sit quiet by my side in the shade'",
+    question: "When did she release "TTPD"?",
       answers: [
-        {text: "Clara Bow", correct: false},
-         {text: "The Alchemy", correct: false},
-         {text: "Paris", correct: true},
-         {text: "peace", correct: false},
+        {text: "May 13, 2024", correct: false},
+         {text: "May 1, 2024", correct: false},
+         {text: "April 19, 2024", correct: true},
+         {text: "March 10, 2024", correct: false},
+      ]
+  },
+  {
+    question: "Where is she ending "The Eras Tour"?",
+      answers: [
+        {text: "Vancouver", correct: true},
+         {text: "Toronto", correct: false},
+         {text: "Miami", correct: false},
+         {text: "New Orleans", correct: false},
+      ]
+  },
+  {
+    question: "What is Taylor's height?",
+      answers: [
+        {text: "5ft11 (180cm)", correct: true},
+         {text: "6ft (182cm)", correct: false},
+         {text: "6ft1 (185cm)", correct: false},
+         {text: "5ft10 (177cm)", correct: false},
       ]
   },
 ];
