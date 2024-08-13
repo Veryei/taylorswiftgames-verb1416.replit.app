@@ -1,6 +1,6 @@
 const questions = [
   {
-    question: "What was the first re-recorded album to come out?",
+    question: "What was the first album to come out?",
     answers: [
       {text: "Red (Taylor's Version)", correct: false},
        {text: "Fearless (Taylor's Version)", correct: true},
