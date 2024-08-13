@@ -1,77 +1,60 @@
 const questions = [
   {
-    question: "Does Taylor have dogs?",
+    question: "'I find myself at your door'",
     answers: [
-      {text: "Yes", correct: true},
-       {text: "No", correct: false},
-       {text: "", correct: false},
-       {text: "", correct: false},
+      {text: "The Last Time", correct: true},
+       {text: "Labyrinth", correct: false},
+       {text: "How did it end?", correct: false},
+       {text: "Peter", correct: false},
     ]
   },
   {
-    question: "What's the name of her 4th album?",
+    question: "'Maybe I was naive, got lost in your eyes'",
       answers: [
-        {text: "Speak Now", correct: false},
-         {text: "reputation", correct: false},
-         {text: "1989", correct: false},
-         {text: "Red", correct: true},
+        {text: "I Hate It Here", correct: false},
+         {text: "Carolina", correct: false},
+         {text: "White Horse", correct: true},
+         {text: "mirrorball", correct: false},
       ]
   },
   {
-  question: "What's the name of her father?",
+  question: "'I hope she'll be your beautiful fool'",
     answers: [
-      {text: "Austin", correct: false},
-       {text: "Andrew", correct: false},
-       {text: "Scott", correct: true},
-       {text: "Franklin", correct: false},
+      {text: "Untouchable", correct: false},
+       {text: "the lakes", correct: false},
+       {text: "happiness", correct: true},
+       {text: "Renegade", correct: false},
     ]
   },
   {
-    question: "How old is she as of August 2024?",
+    question: "'Something gave you the nerve to touch my hand'",
       answers: [
-        {text: "33", correct: false},
-         {text: "34 ", correct: true},
-         {text: "35", correct: false},
-         {text: "32", correct: false},
+        {text: "I Forgot That You Existed", correct: false},
+         {text: "Tell Me Why", correct: false},
+         {text: "loml", correct: false},
+         {text: "It's Nice To Have A Friend", correct: true},
       ]
   },
   {
-    question: "Does she have a song called "evermore"?",
+    question: "'She knew what the agony had been for'",
       answers: [
-        {text: "Yes", correct: true},
-         {text: "No", correct: false},
-         {text: "", correct: false},
-         {text: "", correct: false},
+        {text: "Robin", correct: false},
+         {text: "I Almost Do", correct: false},
+         {text: "The Manuscript", correct: true},
+         {text: "Timeless", correct: false},
       ]
   },
   {
-    question: "When did she release "TTPD"?",
+    question: "'Sit quiet by my side in the shade'",
       answers: [
-        {text: "May 13, 2024", correct: false},
-         {text: "May 1, 2024", correct: false},
-         {text: "April 19, 2024", correct: true},
-         {text: "March 10, 2024", correct: false},
+        {text: "Clara Bow", correct: false},
+         {text: "The Alchemy", correct: false},
+         {text: "Paris", correct: true},
+         {text: "peace", correct: false},
       ]
   },
-  {
-    question: "Where is she ending "the eras tour"?",
-      answers: [
-        {text: "Vancouver", correct: true},
-         {text: "Toronto", correct: false},
-         {text: "Miami", correct: false},
-         {text: "New Orleans", correct: false},
-      ]
-  },
-  {
-    question: "What is Taylor's height?",
-      answers: [
-        {text: "6ft (182cm)", correct: false},
-         {text: "5ft11 (180cm)", correct: true},
-         {text: "5ft10 (177)", correct: false},
-         {text: "6ft1 (185cm)", correct: false},
-      ]
-  }
 ];
+
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
@@ -145,6 +128,8 @@ function handleNextButton(){
     showScore();
   }
 }
+
+
 
 nextButton.addEventListener("click", () =>{
   if(currentQuestionIndex < questions.length){
