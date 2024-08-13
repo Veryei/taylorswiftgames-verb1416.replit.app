@@ -1,11 +1,11 @@
 const questions = [
   {
-    question: "What was the first album to come out?",
+    question: "Does Taylor have a dog?",
     answers: [
-      {text: "Red (Taylor's Version)", correct: false},
-       {text: "Fearless (Taylor's Version)", correct: true},
-       {text: "Speak Now (Taylor's Version", correct: false},
-       {text: "1989 (Taylor's Version)", correct: false},
+      {text: "Yes", correct: true},
+       {text: "No", correct: false},
+       {text: "Yes", correct: true},
+       {text: "No", correct: false},
     ]
   },
   {
