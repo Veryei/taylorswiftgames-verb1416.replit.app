@@ -38,7 +38,7 @@ const questions = [
   {
     question: "'Sat on the roof, you and I'",
       answers: [
-        {text: "Snow On The Beach", correct: true},
+        {text: "Snow On The Beach", correct: false},
          {text: "Mastermind", correct: false},
          {text: "The Archer", correct: false},
          {text: "Cornelia Street", correct: true},
