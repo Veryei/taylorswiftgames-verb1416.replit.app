@@ -4,8 +4,8 @@ const questions = [
     answers: [
       {text: "Yes", correct: true},
        {text: "No", correct: false},
-       {text: "Yes", correct: true},
-       {text: "No", correct: false},
+       {text: "", correct: false},
+       {text: "", correct: false},
     ]
   },
   {
@@ -40,8 +40,8 @@ const questions = [
       answers: [
         {text: "Yes", correct: true},
          {text: "No", correct: false},
-         {text: "Yes", correct: true},
-         {text: "No", correct: false},
+         {text: "", correct: false},
+         {text: "", correct: false},
       ]
   },
   {
