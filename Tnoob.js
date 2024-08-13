@@ -1,76 +1,72 @@
 const questions = [
   {
-    question: "What is Taylor's full name?",
+    question: "Does Taylor have dogs?",
     answers: [
-      {text: "Taylor Andrea Swift", correct: false},
-       {text: "Taylor Swift", correct: false},
-       {text: "Taylor Alison Swift", correct: true},
-       {text: "Taylor Ella Swift", correct: false},
+      {text: "Yes", correct: false},
+       {text: "No", correct: true},
     ]
   },
   {
-    question: "How many cats does Taylor have?",
+    question: "What's the name of her 4th album?",
       answers: [
-        {text: "0", correct: false},
-         {text: "3", correct: true},
-         {text: "2", correct: false},
-         {text: "4", correct: false},
+        {text: "Speak Now", correct: false},
+         {text: "reputation", correct: false},
+         {text: "1989", correct: false},
+         {text: "Red", correct: true},
       ]
   },
   {
-  question: "Where was Taylor born?",
+  question: "What's the name of her father?",
     answers: [
-      {text: "Nashville,TN. ", correct: false},
-       {text: "West Reading, PA. ", correct: true},
-       {text: "New York, NY. ", correct: false},
-       {text: "Franklin, TN. ", correct: false},
+      {text: "Austin", correct: false},
+       {text: "Andrew", correct: false},
+       {text: "Scott", correct: true},
+       {text: "Franklin", correct: false},
     ]
   },
   {
-    question: "How many Grammys does she have?",
+    question: "How old is she as of August 2024?",
       answers: [
-        {text: "10", correct: false},
-         {text: "13 ", correct: false},
-         {text: "8 ", correct: false},
-         {text: "14 ", correct: true},
+        {text: "33", correct: false},
+         {text: "34 ", correct: true},
+         {text: "35 ", correct: false},
+         {text: "32 ", correct: false},
       ]
   },
   {
-    question: "How many Albums does she have?",
+    question: "Does she have a song called "evermore"?",
       answers: [
-        {text: "10", correct: false},
-         {text: "6", correct: false},
-         {text: "11", correct: true},
-         {text: "9", correct: false},
+        {text: "Yes", correct: true},
+         {text: "No", correct: false},
       ]
   },
   {
-    question: "When did she release her first album?",
+    question: "When did she release "TTPD"?",
       answers: [
-        {text: "2006", correct: true},
-         {text: "2004", correct: false},
-         {text: "2007", correct: false},
-         {text: "2003", correct: false},
+        {text: "May 16, 2024", correct: false},
+         {text: "May 1, 2024", correct: false},
+         {text: "April 19, 2024", correct: true},
+         {text: "April 20, 2024", correct: false},
       ]
   },
   {
-    question: "What is Taylor's lucky number?",
+    question: "Where is she ending "the eras tour"?",
       answers: [
-        {text: "7", correct: false},
-         {text: "12", correct: false},
-         {text: "6", correct: false},
-         {text: "13", correct: true},
+        {text: "Vancouver", correct: true},
+         {text: "Toronto", correct: false},
+         {text: "Miami", correct: false},
+         {text: "New Orleans", correct: false},
       ]
   },
   {
-    question: "When is Taylor's birthday?",
+    question: "What is Taylor's height?",
       answers: [
-        {text: "November 10", correct: false},
-         {text: "December 13", correct: true},
-         {text: "November 13", correct: false},
-         {text: "August 6", correct: false},
+        {text: "5'11 (180cm)", correct: true},
+         {text: "6 (182cm)", correct: false},
+         {text: "6'1 (185cm)", correct: false},
+         {text: "5'10 (177cm)", correct: false},
       ]
-  }
+  },
 ];
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
