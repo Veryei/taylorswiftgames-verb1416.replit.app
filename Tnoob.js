@@ -66,7 +66,7 @@ const questions = [
          {text: "6'1 (185cm)", correct: false},
          {text: "5'10 (177cm)", correct: false},
       ]
-  }
+  },
 ];
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
