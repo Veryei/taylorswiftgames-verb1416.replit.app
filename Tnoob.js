@@ -1,70 +1,54 @@
 const questions = [
   {
-    question: "Does Taylor have dogs?",
+    question: "What was the first album to come out?",
     answers: [
-      {text: "Yes", correct: false},
-       {text: "No", correct: true},
+      {text: "Red (Taylor's Version)", correct: false},
+       {text: "Fearless (Taylor's Version)", correct: true},
+       {text: "Speak Now (Taylor's Version", correct: false},
+       {text: "1989 (Taylor's Version)", correct: false},
     ]
   },
   {
-    question: "What's the name of her 4th album?",
+    question: "Does she have a song called 'Invisible'?",
       answers: [
-        {text: "Speak now", correct: false},
-         {text: "reputation", correct: false},
-         {text: "1989", correct: false},
-         {text: "Red", correct: true},
+        {text: "yes", correct: true},
+         {text: "no", correct: false},
       ]
   },
   {
-  question: "What's the name of her father?",
+  question: "When did Miss Americana (Film) come out?",
     answers: [
-      {text: "Austin", correct: false},
-       {text: "Andrew", correct: false},
-       {text: "Scott", correct: true},
-       {text: "Franklin", correct: false},
+      {text: "2019", correct: false},
+       {text: "2018", correct: false},
+       {text: "2020", correct: true},
+       {text: "2021", correct: false},
     ]
   },
   {
-    question: "How old is she as of August 2024",
+    question: "What are the names of her cats?",
       answers: [
-        {text: "33", correct: false},
-         {text: "34", correct: true},
-         {text: "35", correct: false},
-         {text: "32", correct: false},
+        {text: "Liam, Olivia, Peter", correct: false},
+         {text: "Chloe, Dorothy, Betty", correct: false},
+         {text: "Meredith, Olivia, Benjamin", correct: true},
+         {text: "Theo, Sam, Chloe ", correct: false},
       ]
   },
   {
-    question: "Does she have a song named "evermore"?",
+    question: "She's the only artist to win____4 times?",
       answers: [
-        {text: "Yes", correct: true},
-         {text: "No", correct: false},
+        {text: "Song of the year", correct: false},
+         {text: "Best pop vocal album", correct: false},
+         {text: "Best pop solo performance", correct: false},
+         {text: "Album of the year", correct: true},
       ]
   },
   {
-    question: "When did she release "TTPD"?",
+    question: "When did 'reputation' come out?",
       answers: [
-        {text: "May 13, 2024", correct: false},
-         {text: "May 1, 2024", correct: false},
-         {text: "April 19, 2024", correct: true},
-         {text: "March 10, 2024", correct: false},
-      ]
-  },
-  {
-    question: "Where is she ending "The Eras Tour"?",
-      answers: [
-        {text: "Vancouver", correct: true},
-         {text: "Toronto", correct: false},
-         {text: "Miami", correct: false},
-         {text: "New Orleans", correct: false},
-      ]
-  },
-  {
-    question: "What is Taylor's height?",
-      answers: [
-        {text: "5ft11 (180cm)", correct: true},
-         {text: "6ft (182cm)", correct: false},
-         {text: "6ft1 (185cm)", correct: false},
-         {text: "5ft10 (177cm)", correct: false},
+        {text: "December 13, 2016", correct: false},
+         {text: "November 10, 2017", correct: true},
+         {text: "November 10, 2016", correct: false},
+         {text: "October 27, 2017", correct: false},
       ]
   },
 ];
