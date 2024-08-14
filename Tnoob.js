@@ -27,30 +27,48 @@ const questions = [
     ]
   },
   {
-    question: "What are the names of her cats?",
+    question: "How old is Taylor as of August 2024?",
       answers: [
-        {text: "Liam, Olivia, Peter", correct: false},
-         {text: "Chloe, Dorothy, Betty", correct: false},
-         {text: "Meredith, Olivia, Benjamin", correct: true},
-         {text: "Theo, Sam, Chloe ", correct: false},
+        {text: "33", correct: false},
+         {text: "34", correct: true},
+         {text: "35", correct: false},
+         {text: "32", correct: false},
       ]
   },
   {
-    question: "She's the only artist to win____4 times?",
+    question: "Does she have a song named "evermore"?",
       answers: [
-        {text: "Song of the year", correct: false},
-         {text: "Best pop vocal album", correct: false},
-         {text: "Best pop solo performance", correct: false},
-         {text: "Album of the year", correct: true},
+        {text: "Yes", correct: true},
+         {text: "No", correct: false},
+         {text: "Yes", correct: true},
+         {text: "No", correct: false},
       ]
   },
   {
-    question: "When did 'reputation' come out?",
+    question: "When did she release "TTPD"?",
       answers: [
-        {text: "December 13, 2016", correct: false},
-         {text: "November 10, 2017", correct: true},
-         {text: "November 10, 2016", correct: false},
-         {text: "October 27, 2017", correct: false},
+        {text: "May 13, 2024", correct: false},
+         {text: "May 1, 2024", correct: false},
+         {text: "April 19, 2024", correct: true},
+         {text: "March 10, 2024", correct: false},
+      ]
+  },
+  {
+    question: "Where is she ending "The Eras Tour"?",
+      answers: [
+        {text: "Vancouver", correct: true},
+         {text: "Toronto", correct: false},
+         {text: "Miami", correct: false},
+         {text: "New Orleans", correct: false},
+      ]
+  },
+  {
+    question: "What is Taylor's height?",
+      answers: [
+        {text: "5ft11 (180cm)", correct: true},
+         {text: "6ft (182cm)", correct: false},
+         {text: "6ft1 (185cm)", correct: false},
+         {text: "5ft10 (177cm)", correct: false},
       ]
   },
 ];
