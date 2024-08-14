@@ -9,19 +9,21 @@ const questions = [
     ]
   },
   {
-    question: "Does she have a song called 'Invisible'?",
+    question: "What's the name of her 4th album?",
       answers: [
-        {text: "yes", correct: true},
-         {text: "no", correct: false},
+        {text: "Speak Now", correct: false},
+        {text: "reputation", correct: false},
+        {text: "1989", correct: false},
+        {text: "Red", correct: true},
       ]
   },
   {
-  question: "When did Miss Americana (Film) come out?",
+  question: "What's the name of her father?",
     answers: [
-      {text: "2019", correct: false},
-       {text: "2018", correct: false},
-       {text: "2020", correct: true},
-       {text: "2021", correct: false},
+      {text: "Austin", correct: false},
+       {text: "Andrew", correct: false},
+       {text: "Scott", correct: true},
+       {text: "Franklin", correct: false},
     ]
   },
   {
