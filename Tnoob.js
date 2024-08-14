@@ -2,10 +2,10 @@ const questions = [
   {
     question: "Does Taylor have a dog?",
     answers: [
-      {text: "Yes", correct: true},
-       {text: "No", correct: false},
-       {text: "Yes", correct: true},
-       {text: "No", correct: false},
+      {text: "Yes", correct: false},
+       {text: "No", correct: true},
+       {text: "Yes", correct: false},
+       {text: "No", correct: true},
     ]
   },
   {
