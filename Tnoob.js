@@ -27,30 +27,30 @@ const questions = [
     ]
   },
   {
-    question: "How old is Taylor as of August 2024?",
+    question: "What are the names of her cats?",
       answers: [
-        {text: "33", correct: false},
-         {text: "34", correct: true},
-         {text: "35", correct: false},
-         {text: "32", correct: false},
+        {text: "Liam, Olivia, Peter", correct: false},
+         {text: "Chloe, Dorothy, Betty", correct: false},
+         {text: "Meredith, Olivia, Benjamin", correct: true},
+         {text: "Theo, Sam, Chloe ", correct: false},
       ]
   },
   {
-    question: "Does she have a song named "evermore"?",
+    question: "She's the only artist to win____4 times?",
       answers: [
-        {text: "Yes", correct: true},
-         {text: "No", correct: false},
-         {text: "Yes", correct: true},
-         {text: "No", correct: false},
+        {text: "Song of the year", correct: false},
+         {text: "Best pop vocal album", correct: false},
+         {text: "Best pop solo performance", correct: false},
+         {text: "Album of the year", correct: true},
       ]
   },
   {
-    question: "When did she release "TTPD"?",
+    question: "When did 'reputation' come out?",
       answers: [
-        {text: "May 13, 2024", correct: false},
-         {text: "May 1, 2024", correct: false},
-         {text: "April 19, 2024", correct: true},
-         {text: "March 10, 2024", correct: false},
+        {text: "December 13, 2016", correct: false},
+         {text: "November 10, 2017", correct: true},
+         {text: "November 10, 2016", correct: false},
+         {text: "October 27, 2017", correct: false},
       ]
   },
 ];
@@ -128,8 +128,6 @@ function handleNextButton(){
     showScore();
   }
 }
-
-
 
 nextButton.addEventListener("click", () =>{
   if(currentQuestionIndex < questions.length){
