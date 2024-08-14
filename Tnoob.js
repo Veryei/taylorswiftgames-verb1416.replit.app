@@ -53,24 +53,6 @@ const questions = [
          {text: "March 10, 2024", correct: false},
       ]
   },
-  {
-    question: "Where is she ending "The Eras Tour"?",
-      answers: [
-        {text: "Vancouver", correct: true},
-         {text: "Toronto", correct: false},
-         {text: "Miami", correct: false},
-         {text: "New Orleans", correct: false},
-      ]
-  },
-  {
-    question: "What is Taylor's height?",
-      answers: [
-        {text: "5ft11 (180cm)", correct: true},
-         {text: "6ft (182cm)", correct: false},
-         {text: "6ft1 (185cm)", correct: false},
-         {text: "5ft10 (177cm)", correct: false},
-      ]
-  },
 ];
 
 const questionElement = document.getElementById("question");
