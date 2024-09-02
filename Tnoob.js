@@ -45,7 +45,7 @@ const questions = [
       ]
   },
   {
-    question: "Which of these albums are not Taylor's Version yet?",
+    question: "Which of these albums is not Taylor's Version yet?",
       answers: [
         {text: "Lover", correct: false},
          {text: "Taylor Swift", correct: true},
