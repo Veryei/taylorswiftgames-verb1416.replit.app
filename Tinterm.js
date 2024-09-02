@@ -1,22 +1,24 @@
 const questions = [
   {
-    question: "What was the first re-recorded album to come out?",
+    question: "Does she have a song called "Robin"?",
     answers: [
-      {text: "Red (Taylor's Version)", correct: true},
-       {text: "Fearless (Taylor's Version)", correct: false},
-       {text: "Speak Now (Taylor's Version", correct: false},
-       {text: "1989 (Taylor's Version)", correct: false},
+      {text: "Yes", correct: true},
+       {text: "No", correct: false},
+       {text: "Yes", correct: true},
+       {text: "No", correct: false},
     ]
   },
   {
-    question: "Does she have a song called 'Invisible'?",
+    question: "Where is she ending "The Eras Tour"?",
       answers: [
-        {text: "yes", correct: true},
-         {text: "no", correct: false},
+        {text: "Toronto", correct: false},
+         {text: "Vancouver", correct: true},
+         {text: "New Orleans", correct: false},
+         {text: "Miami", correct: false},
       ]
   },
   {
-  question: "When did Miss Americana (Film) come out?",
+  question: "?",
     answers: [
       {text: "2019", correct: false},
        {text: "2018", correct: false},
