@@ -36,21 +36,21 @@ const questions = [
       ]
   },
   {
-    question: "She's the only artist to win____4 times?",
+    question: "What city does she live in?",
       answers: [
-        {text: "Song of the year", correct: false},
-         {text: "Best pop vocal album", correct: false},
-         {text: "Best pop solo performance", correct: false},
-         {text: "Album of the year", correct: true},
+        {text: "Los Angeles", correct: false},
+         {text: "Nashville", correct: false},
+         {text: "New York City", correct: true},
+         {text: "Philadelphia", correct: false},
       ]
   },
   {
-    question: "When did 'reputation' come out?",
+    question: "Which of these albums are not Taylor's Version yet?",
       answers: [
-        {text: "December 13, 2016", correct: false},
-         {text: "November 10, 2017", correct: true},
-         {text: "November 10, 2016", correct: false},
-         {text: "October 27, 2017", correct: false},
+        {text: "Lover", correct: false},
+         {text: "Taylor Swift", correct: true},
+         {text: "Red", correct: false},
+         {text: "Fearless", correct: false},
       ]
   },
 ];
