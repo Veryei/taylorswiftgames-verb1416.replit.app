@@ -27,12 +27,12 @@ const questions = [
     ]
   },
   {
-    question: "What are the names of her cats?",
+    question: "Does she have a sister?",
       answers: [
-        {text: "Liam, Olivia, Peter", correct: false},
-         {text: "Chloe, Dorothy, Betty", correct: false},
-         {text: "Meredith, Olivia, Benjamin", correct: true},
-         {text: "Theo, Sam, Chloe ", correct: false},
+        {text: "Yes", correct: false},
+         {text: "No", correct: true},
+         {text: "Yes", correct: false},
+         {text: "No", correct: true},
       ]
   },
   {
